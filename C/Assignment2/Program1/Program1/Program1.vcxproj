@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B38C59B4-A3CC-4FA2-9A54-17E93B17D2B7}</ProjectGuid>
+    <ProjectGuid>{95C328F9-5AF4-4C3C-9B56-4C3A4E06905E}</ProjectGuid>
     <RootNamespace>Program1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -110,13 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="add.h" />
-    <ClInclude Include="div.h" />
-    <ClInclude Include="mul.h" />
-    <ClInclude Include="sub.h" />
+    <ClCompile Include="bin_dec.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
