@@ -37,7 +37,7 @@ int main()
 	{
 		calc();
 		
-		printf("\nenter 1 to continue or 0 to terminate \n");
+		printf("\n enter 1 to continue or 0 to terminate \n");
 		scanf("%d", &choice);
 		if (choice == 0)
 		{
