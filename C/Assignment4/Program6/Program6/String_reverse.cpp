@@ -12,7 +12,7 @@ void reverse(char *s)
 int main()
 {
 	char *s = (char*)malloc(20);
-	printf("enter string:");
+	printf("enter string :");
 	scanf_s("%[^\n]s", s, 20);
 	reverse(s);
 	getchar();
