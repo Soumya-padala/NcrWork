@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="strings_display.cpp">
+    <ClCompile Include="replace_spaces.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
