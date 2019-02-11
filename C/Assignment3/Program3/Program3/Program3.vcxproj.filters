@@ -15,22 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.cpp">
+    <ClCompile Include="count_ones.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="add.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sub.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="div.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mul.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>
