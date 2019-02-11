@@ -3,7 +3,7 @@
 int replace(char *s)
 {
 	int i = 0,count=0;
-	while (s[i]='\0')
+	while (s[i]!='\0')
 	{
 		if (s[i] == ' ')
 		{
@@ -24,6 +24,7 @@ int main()
 	scanf_s("%[^\n]s", s, 20);
 	n=replace(s);
 	printf("\n no of spaces: %d", n);
+	getchar();
 	getchar();
 	return 0;
 }
