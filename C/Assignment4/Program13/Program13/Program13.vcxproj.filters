@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Expand_string.cpp">
+    <ClCompile Include="expand_string.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
