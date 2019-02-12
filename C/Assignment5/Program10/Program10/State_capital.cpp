@@ -17,12 +17,13 @@ int main()
 	{
 		printf("Enter state-capital\n");
 		getchar();
+		fflush(stdin);
 		scanf_s("%[^\n]s", s, 20);
 		n++;
 		fputs(s, fp);
 		fputs("\n", fp);
 	}
-	
+	fclose(fp);
 	FILE *f = fopen("file4.txt", "r+");
 	printf("enter 1)to know the capital 2)to know the country name 3)to terminate");
 	scanf_s("%d", &b);
