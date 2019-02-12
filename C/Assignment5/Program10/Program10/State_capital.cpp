@@ -29,7 +29,7 @@ int main()
 	switch (b)
 	{
 	case 1:
-		printf("enter either country or capital \n");
+		printf("enter either country or capital :\n");
 		fflush(stdin);
 		getchar();
 		scanf_s("%[^\n]s", target, 20);
