@@ -4,7 +4,7 @@ int main()
 {
 	printf("sum is :%d",sum);
 	#ifdef sum
-	printf("sum is defined");
+	printf("sum is defined ");
 	#endif 
 		return 0;
 	getchar();
