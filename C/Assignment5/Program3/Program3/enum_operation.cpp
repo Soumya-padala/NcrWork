@@ -22,19 +22,18 @@ int main()
 			printf("\naddition of complex numbers is %d+i%d ", c.real, c.img);
 		break;
 	case subtraction:	c.real = a.real - b.real;
-			c.img = a.img - b.img;
-		printf("\n subtraction of complex numbers is %d-i%d ", c.real, c.img);
-		break;
-	case mul: c.real = a.real*b.real - a.img*b.img;
-			c.img = a.img*b.real + a.real*b.img;
-		printf("\n multiplication of complex numbers is %d*i%d ", c.real, c.img);
-		break;
-	/*case division:c.real = a.real /b.real;
-		c.img = a.img /b.img;
-		printf("\n division of complex numbers is %d/i%d ", c.real, c.img);
-		break;*/
-	default:
-		printf("choose correct option");
+						c.img = a.img - b.img;
+						printf("\n subtraction of complex numbers is %d-i%d ", c.real, c.img);
+						break;
+	case mul:			 c.real = a.real*b.real - a.img*b.img;
+						c.img = a.img*b.real + a.real*b.img;
+						printf("\n multiplication of complex numbers is %d*i%d ", c.real, c.img);
+						break;
+	/*case division:	c.real = a.real /b.real;
+						c.img = a.img /b.img;
+						printf("\n division of complex numbers is %d/i%d ", c.real, c.img);
+						break;*/
+	default:			printf("choose correct option");
 
 	}
 	getchar();
