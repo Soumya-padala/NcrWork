@@ -48,8 +48,12 @@ int main()
 
 			if (strcmp(token, target)==0)
 			{
-				capital = strtok(NULL, "-");
-				printf("%s", capital);
+				//capital = strtok(str, "-");
+				while (token != NULL) {
+					printf("%s\n", token);
+					//token = strtok(NULL, "-");
+				}
+				printf("\n capital is :%s", token);
 			}
 		}
 		break;
