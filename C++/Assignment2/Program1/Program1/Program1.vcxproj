@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4B9AE8A7-960C-4408-8CC2-336B64C6A4D4}</ProjectGuid>
-    <RootNamespace>Program2</RootNamespace>
+    <ProjectGuid>{E29D4096-9E6A-448D-B19B-D3B82E45F92B}</ProjectGuid>
+    <RootNamespace>Program1</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,7 +110,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Out_overload.cpp" />
+    <ClCompile Include="Polar.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
