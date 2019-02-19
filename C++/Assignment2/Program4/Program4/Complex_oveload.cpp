@@ -43,23 +43,65 @@ public:
 	Complex operator++(int)
 	{
 		Complex res;
-		res.img = real++;
+		res.real = real++;
 		res.img = img++;
 		return  res;
 
 	}
-	Complex operator-(Complex c)
+
+	void operator - (void)
 	{
-		return  Complex((-c.real, -c.img));
+		real = -real;
+		img = -img;
 	}
 	void display()
 	{
-		cout << "result:" << real << "+i" << img;
+		cout << "result:" << real << "+i" << img<<endl;
+	}
+	friend ostream &operator<<(ostream &out, Complex &c);
+	friend istream &operator>>(istream &in, Complex &c);
+	void operator=(Complex &c)
+	{
+		
+		real = c.real;
+		img = c.img;
+	}
+	Complex operator,(Complex c)
+	{
+		Complex temp;
+		temp.real = c.real;
+		temp.img = c.img;
+		return temp;
 	}
 };
+ostream &operator<<(ostream &out, Complex &c)
+{
+	cout << "real" << c.real << " " << "img" << c.img << endl;
+	return out;
+}
+istream &operator >> (istream &in, Complex &c)
+{
+	cout << "enter real and imaginary numbers";
+	cin >> c.real >> c.img;
+	return in;
+}
+
 int main()
 {
 	Complex c1(2, 3), c2(4, 5);
-	Complex c3;
-	c3 = c1 + c2;
+	Complex c3,c4;
+	c3 = c1;
+	/*c3 = c1 + c2;
+	c3.display();
+	c3 = c1 - c2;
+	c3.display();
+	-c1;
+	c3=c1++;*/
+	c3.display();
+	c4 = c2, c1, c3;
+	c4 = (c2, c1, c3);
+	c4.display();
+	getchar();
+	getchar();
+	return 0;
 }
