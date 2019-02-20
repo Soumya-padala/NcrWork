@@ -10,15 +10,15 @@ class Employee
 public:
 	Employee()
 	{
-		salary = 0;
 	}
-	Employee(int x, char *c, int s)
+	/*ployee(int x, char *c, int s)
 	{
 		empno = x;
 		strcpy(name,c);
 		salary = s;
-	}
+	}*/
 	friend istream &operator >> (istream &in, Employee e);
+	friend ostream &operator <<(ostream &out, Employee e);
 };
 istream &operator >> (istream &in, Employee e)
 {
@@ -30,12 +30,22 @@ istream &operator >> (istream &in, Employee e)
 	in >> e.salary;
 	return in;
 }
+ostream &operator <<(ostream &out, Employee e)
+{
+	cout << "emp.no" << e.empno;
+	cout << "emp.name" << e.name;
+	cout << e.salary << endl;
+	return out;
+	
+}
 int main()
 {
 	int i;
-	Employee *e = new Employee[5];
-	for (i = 0; i < 5; i++)
+	Employee *e = new Employee[2];
+	for (i = 0; i < 2;i++)
 		cin >> e[i];
+	for (i = 0; i < 2;i++)
+		cout << e[i];
 	getchar();
 	getchar();
 	return 0;
