@@ -62,19 +62,14 @@ public:
 	{
 		node *ptr = head;
 		node *temp = head;
-		while (ptr != NULL&&ptr->data != data)
+		while (ptr != NULL&&ptr->data!=data)
 		{
 			temp = ptr;
 			ptr = ptr->next;
 		}
-		if (data==ptr->data)
-		{
-			insert_front(ptr->data);
-			temp->next = ptr->next;
-			delete ptr;
-		}
-		else
-			insert_front(data);
+	insert_front(ptr->data);
+	temp->next = ptr->next;
+	delete ptr;
 	}
 	void print()
 	{
