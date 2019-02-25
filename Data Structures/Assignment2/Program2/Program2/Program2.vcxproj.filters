@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stack.cpp">
+    <ClCompile Include="Adjusting_ll.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -26,7 +26,7 @@ public:
 	}
 	~String()
 	{
-		delete []str;
+	
 	}
 	String operator+(String s)
 	{
@@ -39,9 +39,13 @@ public:
 		cout << res;
 		return res;
 	}
+	char operator[](int i)
+	{
+		return str[i];
+	}
 	void display()
 	{
-		cout << "string is:" << str<<endl;
+		cout << "string is:" << str << len << endl;
 	}
 	friend ostream &operator<<(ostream &cout, String &s);
 	friend istream &operator >> (istream &in, String &s);
