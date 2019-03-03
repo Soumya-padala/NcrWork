@@ -5,7 +5,7 @@ class person {
 	int age;
 public:
 	void get_age_name(char *name, int age) {
-		cout << "name: " << name << "age: " << age << endl;
+		cout << " name: " << name << "age: " << age << endl;
 	}
 };
 class physique :virtual public person //to remove mutiple copies of person class in employee class virtual is used
