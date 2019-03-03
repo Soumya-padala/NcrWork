@@ -95,7 +95,7 @@ int main()
 		default:cout << "enter correct option";
 
 		}
-		cout << "enter 1 to continue ,0 to stop \n";
+		cout << " enter 1 to continue ,0 to stop \n";
 		cin >> p;
 		if (p == 0)
 			return;
