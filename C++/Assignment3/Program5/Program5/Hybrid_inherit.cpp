@@ -22,7 +22,7 @@ class family :virtual public person {
 	char *religion;
 public:
 	void get_numchi_rel(char *religion, int nochildren) {
-		cout << "religion : " << religion << "no. of children : " << nochildren << endl;
+		cout << "religion : " << religion << "no. of  children : " << nochildren << endl;
 	}
 };
 class employee :public family, public physique {
