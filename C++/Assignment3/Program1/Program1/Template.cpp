@@ -92,7 +92,7 @@ int main()
 			cout << "element found at:" << index;
 			delete[] arr2;
 			break;
-		default:cout << "enter correct option";
+		default:cout << "enter correct option :";
 
 		}
 		cout << " enter 1 to continue ,0 to stop \n";
