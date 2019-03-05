@@ -1,0 +1,46 @@
+#include<iostream>
+using namespace std;
+void expand_string(char *s1, char *s2)
+{
+	int i = 0,j=0;
+	int c;
+	while ((c = s1[i++]) != '\0')
+	{
+		if (s1[i] == '-'&&s1[i + 1] > c)
+		{
+			i++;
+			while (c < s1[i])
+			{
+				s2[j++] = c++;
+			}
+		}
+		else if (s1[i] == '-'&&s1[i + 1] == '-')
+		{
+			throw "cannot have two hyphens continuously";
+		}
+		else
+			s2[j++] = c;
+	}
+	s2[j] = '\0';
+
+}
+int main()
+{
+	char *string1 = new char[20];
+	char *string2 = new char[40];
+	try
+	{
+		cout<<"Enter string 1:"<<endl;
+		cin>> string1;
+		expand_string(string1, string2);
+		cout<<"Expanded string is:"<<endl;
+		cout<<string2;
+	}
+	catch (const char*msg)
+	{
+		cout << msg;
+	}
+	getchar();
+	getchar();
+	return 0;
+}
