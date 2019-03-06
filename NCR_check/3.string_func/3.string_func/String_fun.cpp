@@ -102,6 +102,8 @@ int main()
 		if (i == 0)
 			return 0;
 	}
+	free(string1);
+	free(string2);
 	getchar();
 	getchar();
 	return 0;

@@ -16,7 +16,6 @@ void expand_string(char *s1, char *s2)
 			while (c < s1[i])
 			{
 				s2[j++] = c++;
-				cout << s2[j];
 			}
 		}
 		else if (s1[i] == '-'&&s1[i + 1] == '-')
@@ -40,6 +39,8 @@ int main()
 		expand_string(string1, string2);
 		cout<<"Expanded string is:"<<endl;
 		cout<<string2;
+		delete[] string1;
+		delete[] string2;
 	}
 	catch (const char*msg)
 	{
