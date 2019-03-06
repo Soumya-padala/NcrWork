@@ -1,9 +1,13 @@
+#include<string.h>
 #include<iostream>
 using namespace std;
 void expand_string(char *s1, char *s2)
 {
 	int i = 0,j=0;
 	int c;
+	int l = strlen(s1);
+	if (s1[0] == '-'||s1[l-1]=='-')
+		throw "cannot have hyphen at front or back";
 	while ((c = s1[i++]) != '\0')
 	{
 		if (s1[i] == '-'&&s1[i + 1] > c)
@@ -12,6 +16,7 @@ void expand_string(char *s1, char *s2)
 			while (c < s1[i])
 			{
 				s2[j++] = c++;
+				cout << s2[j];
 			}
 		}
 		else if (s1[i] == '-'&&s1[i + 1] == '-')
