@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{FBB02282-C3F2-4184-9A65-3C3BF0EA0D7A}</ProjectGuid>
+    <ProjectGuid>{E192D81C-0196-4409-9D15-17E9E34BC72F}</ProjectGuid>
     <RootNamespace>My1Calculator</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -110,7 +110,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calci.cpp" />
+    <ClCompile Include="add.cpp" />
+    <ClCompile Include="Calculator.cpp" />
+    <ClCompile Include="div.cpp" />
+    <ClCompile Include="evaluate.cpp" />
+    <ClCompile Include="mul.cpp" />
+    <ClCompile Include="Sub.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

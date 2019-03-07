@@ -8,6 +8,7 @@ void expand_string(char *s1, char *s2)
 	int l = strlen(s1);
 	if (s1[0] == '-'||s1[l-1]=='-')
 		throw "cannot have hyphen at front or back";
+	//incase if no hyphen 
 	while ((c = s1[i++]) != '\0')
 	{
 		if (s1[i] == '-'&&s1[i + 1] == c)

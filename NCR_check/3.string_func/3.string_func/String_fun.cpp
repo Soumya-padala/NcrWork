@@ -37,7 +37,7 @@ void str_cat(char *s1, char *s2)
 	}
 	*(s1 + l) = '\0';
 }
-void concat(char *s1, char *s2)
+void compare(char *s1, char *s2)
 {
 	int l1 = strlen(s1);
 	int l2 = strlen(s2);
@@ -73,27 +73,39 @@ int main()
 		switch (choice)
 		{
 		case 1:printf("enter string to be reversed :\n");
-				scanf_s("%9s", string1, 40);
+			  getchar();
+			  scanf_s("%[^\n]s", string1, 40);
+				//scanf_s("%9s", string1, 40);
 				reverse(string1, string2);
 				printf("reversed string :%s ", string2);
 				break;
 		case 2:printf("enter string to be copied :\n");
-			    scanf_s("%9s", string1, 40);
+			getchar();
+			scanf_s("%[^\n]s", string1, 40);
+			   // scanf_s("%9s", string1, 40);
 				str_copy(string1, string2);
 				printf("\n copied string :%s", string2);
 				break;
 		case 3:printf("enter first string :\n");
-			    scanf_s("%9s", string1, 40);
+		       getchar();
+			   scanf_s("%[^\n]s", string1, 40);
+			    //scanf_s("%9s", string1, 40);
 				printf("enter second string :\n");
-				scanf_s("%9s", string2, 40);
+				getchar();
+				scanf_s("%[^\n]s", string2, 40);
+				//scanf_s("%9s", string2, 40);
 				str_cat(string1,string2);
 				printf("\n concatnated string :%s", string1);
 				break;
 		case 4:printf("enter first string :\n");
-			   scanf_s("%9s", string1, 40);
+			 getchar();
+			 scanf_s("%[^\n]s", string1, 40);
+			   //scanf_s("%9s", string1, 40);
 			   printf("enter second string :\n");
-			   scanf_s("%9s", string2, 40);
-			   concat(string1, string2);
+			   getchar();
+			   scanf_s("%[^\n]s", string2, 40);
+			  // scanf_s("%9s", string2, 40);
+			   compare(string1, string2);
 			   break;
 		default:printf("enter values from 1 to 4");
 		}
