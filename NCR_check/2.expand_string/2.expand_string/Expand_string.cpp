@@ -10,7 +10,15 @@ void expand_string(char *s1, char *s2)
 		throw "cannot have hyphen at front or back";
 	while ((c = s1[i++]) != '\0')
 	{
-		if (s1[i] == '-'&&s1[i + 1] > c)
+		if (s1[i] == '-'&&s1[i + 1] == c)
+		{
+			s2[j++] = c;
+			i = i + 2;
+
+		}
+		else if (s1[i] == '-'&&s1[i + 1] < c)
+			throw "invalid expression";
+		else if (s1[i] == '-'&&s1[i + 1] > c)
 		{
 			i++;
 			while (c < s1[i])
@@ -18,6 +26,7 @@ void expand_string(char *s1, char *s2)
 				s2[j++] = c++;
 			}
 		}
+			
 		else if (s1[i] == '-'&&s1[i + 1] == '-')
 		{
 			throw "cannot have two hyphens continuously";
