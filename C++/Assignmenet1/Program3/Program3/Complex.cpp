@@ -15,10 +15,19 @@ public:
 		real = x;
 		img = x;
 	}
+
+
+
 	Complex(int x, int y)
 	{
 		real = x;
 		img = y;
+	}
+	void get_details()
+	{
+		cout << "enter real and imaginary  numbers";
+		cin >> real;
+		cin >>img;
 	}
 	void display_complex()
 	{
@@ -45,12 +54,35 @@ public:
 
 int main()
 {
-	Complex c1(4, 3), c2(3, 2);
+	Complex c1, c2;
 	Complex c3,c4;
-	c3 = add(c1, c2);
-	c3.display_complex();
-	c4 = mul(c1, c2);
-	c4.display_complex();
+	int c;
+	int choice = 0;
+		while (1)
+		{
+			cout<<"enter 1.addition 2.multiply";
+			cin>>choice;
+			switch (choice)
+			{
+			case 1:c1.get_details();
+				  c2.get_details();
+				  c3 = add(c1, c2);
+				  c3.display_complex();
+				  break;
+			case 2:c1.get_details();
+				c2.get_details();
+				c4 = mul(c1, c2);
+				c4.display_complex();
+				break;
+			default:cout << "enter correct values";
+			}
+			cout << "enter 0.to exit else any number to continue";
+			cin >> c;
+			if (c== 0)
+			{
+				return 0;
+			}
+		}
 	getchar();
 	getchar();
 	return 0;
