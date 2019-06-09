@@ -65,8 +65,8 @@ int main()
 {
 	char *string1 = (char*)malloc(40);
 	char *string2 = (char*)malloc(40);
-	int choice = 0,i=1;
-	while (i)
+	int choice = 0,i;
+	while (1)
 	{
 		printf("enter 1.reverse 2.copy 3.concatnate 4.comparison \n");
 		scanf_s("%d", &choice);
@@ -75,21 +75,18 @@ int main()
 		case 1:printf("enter string to be reversed :\n");
 			  getchar();
 			  scanf_s("%[^\n]s", string1, 40);
-				//scanf_s("%9s", string1, 40);
 				reverse(string1, string2);
 				printf("reversed string :%s ", string2);
 				break;
 		case 2:printf("enter string to be copied :\n");
 			getchar();
 			scanf_s("%[^\n]s", string1, 40);
-			   // scanf_s("%9s", string1, 40);
 				str_copy(string1, string2);
 				printf("\n copied string :%s", string2);
 				break;
 		case 3:printf("enter first string :\n");
 		       getchar();
 			   scanf_s("%[^\n]s", string1, 40);
-			    //scanf_s("%9s", string1, 40);
 				printf("enter second string :\n");
 				getchar();
 				scanf_s("%[^\n]s", string2, 40);
@@ -100,11 +97,9 @@ int main()
 		case 4:printf("enter first string :\n");
 			 getchar();
 			 scanf_s("%[^\n]s", string1, 40);
-			   //scanf_s("%9s", string1, 40);
 			   printf("enter second string :\n");
 			   getchar();
 			   scanf_s("%[^\n]s", string2, 40);
-			  // scanf_s("%9s", string2, 40);
 			   compare(string1, string2);
 			   break;
 		default:printf("enter values from 1 to 4");

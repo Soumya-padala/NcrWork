@@ -115,6 +115,7 @@
     <ClCompile Include="div.cpp" />
     <ClCompile Include="evaluate.cpp" />
     <ClCompile Include="mul.cpp" />
+    <ClCompile Include="paranthesis.cpp" />
     <ClCompile Include="Sub.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

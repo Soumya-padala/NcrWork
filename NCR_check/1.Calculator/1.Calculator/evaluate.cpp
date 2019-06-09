@@ -35,6 +35,7 @@ extern int evaluate(string tokens) {
 	stack <int> values;
 
 	// stack to store operators. 
+
 	stack <char> ops;
 
 	for (i = 0; i < tokens.length(); i++) {
@@ -49,7 +50,9 @@ extern int evaluate(string tokens) {
 		 }
 
 		// if number push to values stack 
-		else if (isdigit(tokens[i])) {
+		 
+		 
+		 else if (isdigit(tokens[i])) {
 			int val = 0;
 
 			// if more than one digit in number. 
